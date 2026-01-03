@@ -10,11 +10,11 @@ import {
 } from "@/components/ui/carousel";
 
 const products = [
-    { id: 8, image: '/product/P8.jpeg' },
-    { id: 2, image: '/product/P2.jpeg' },
+    { id: 8, image: '/product/P1.jpeg' },
     { id: 3, image: '/product/P3.jpeg' },
     { id: 4, image: '/product/P4.jpeg' },
-    { id: 6, image: '/product/P6.jpeg' },
+    { id: 6, image: '/product/10.png' },
+    { id: 2, image: '/product/P2.jpeg' },
     { id: 7, image: '/product/P7.jpeg' },
     { id: 9, image: '/product/P9.jpeg' },
 ];
@@ -37,15 +37,14 @@ function ProductSlider() {
                                     initial={{ opacity: 0, y: 50 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: index * 0.1, type: "spring" }}
-                                    whileHover={{ y: -12 }}
                                 >
-                                    <div className="bg-white rounded-md shadow-xl overflow-hidden border border-gray-100 transition-all duration-500 hover:shadow-blue-200/50 hover:border-blue-200">
-                                        <div className="relative overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 aspect-[9/16]">
+                                    <div className="bg-white rounded-xs shadow-xl overflow-hidden ">
+                                        <div className="relative  overflow-hidden  aspect-[9/16]">
                                             <motion.img
                                                 src={product.image}
                                                 alt={`Product ${product.id}`}
                                                 className="w-full h-full object-cover"
-                                                whileHover={{ scale: 1.1 }}
+                                                whileHover={{ scale: 1.03 }}
                                                 transition={{ duration: 0.6, ease: "easeOut" }}
                                             />
                                         </div>
